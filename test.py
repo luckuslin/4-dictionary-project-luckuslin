@@ -11,11 +11,21 @@ amazon = [
 while True:
     for index, item in enumerate(amazon):
         print(index, ":", item["name"])
-    cart=int(input("What Will you add to cart?"))
-    for index, item in enumerate(amazon):
-        print(index, ":", item["name"])
+    cart=int(input("What Will you add to cart?If donewrote "))
+    
     if cart == 0:
-        print(f'')
+        samsung=input("Will you order the SAMSUNG 32-Inch Class Full HD F6000 Smart TV for 127.99? Y/N:")
+        if samsung == "Y":
+            print("Purchase Accepted!")
+        else :
+            print("Canceled order")
+    elif cart == 1:
+        xbox=input("Will you order the Xbox Series X 1TB Gaming Console Console for 670? Y/N:")
+        if xbox == "Y":
+            print("Purchase Accepted!")
+        else :
+            print("Canceled order")
+
 
 
 
