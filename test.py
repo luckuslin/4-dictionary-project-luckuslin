@@ -7,26 +7,23 @@ amazon = [
     {"name": "TERRO Ant Killer Bait Stations T300B","price": 11.97,"catergory": "Garden & Outdoor"},
     {"name": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones" ,"price": 99.99, "catergory:": "Electronics"}
 ]
-
-while True:
-    for index, item in enumerate(amazon):
-        print(index, ":", item["name"])
-    cart=int(input("What Will you add to cart?If donewrote "))
+def carts():
+    while True:
+        for index, item in enumerate(amazon):
+            print(index, ":", item["name"])
+        cart=int(input("What Will you add to cart?" 
+        "If done, write finished"))
     
-    if cart == 0:
-        samsung=input("Will you order the SAMSUNG 32-Inch Class Full HD F6000 Smart TV for 127.99? Y/N:")
+        if cart == 0:
+          samsung=input("Will you order the SAMSUNG 32-Inch Class Full HD F6000 Smart TV for 127.99? Y/N:")
         if samsung == "Y":
-            print("Purchase Accepted!")
+                print("Purchase Accepted!")
         else :
             print("Canceled order")
-    elif cart == 1:
-        xbox=input("Will you order the Xbox Series X 1TB Gaming Console Console for 670? Y/N:")
-        if xbox == "Y":
-            print("Purchase Accepted!")
-        else :
-            print("Canceled order")
-
-
+        
+        
+        
+carts()
 
 
 
