@@ -13,8 +13,9 @@ def carts():
             print(index, ":", item["name"])
         cart=int(input("What Will you add to cart?" 
         "If done, write finished"))
-    
-        if cart == 0:
+        if cart == "finished":
+            order=input("are you done? Y/N")
+        elif cart == 0:
           samsung=input("Will you order the SAMSUNG 32-Inch Class Full HD F6000 Smart TV for 127.99? Y/N:")
         if samsung == "Y":
                 print("Purchase Accepted!")
