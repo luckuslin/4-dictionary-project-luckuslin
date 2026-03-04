@@ -28,11 +28,16 @@ lang(3,"Lorsque j'avais six ans j'ai vu, une fois, une magnifique image, dans un
 
 def magnus(x):
     Carlsen=0
-    Crotia="HODI"
+    Count=0
     for letter in x:
-        if letter == Crotia:
-            Carlsen +=1
-        print (f"{Carlsen}")
-    
+        if letter == "HO":
+                Count += 1
+        elif letter == "NI":
+                Count += 1
+        if Count == 2:
+                 Carlsen += 1
+                 print(f"{Carlsen}")
+                 Count = 0
+        
+magnus("HHHHOOOONNNNIIII")
 
-magnus("PROHODNIHODNIK")
