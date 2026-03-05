@@ -7,11 +7,10 @@ amazon = [
     {"name": "TERRO Ant Killer Bait Stations T300B","price": 11.97,"catergory": "Garden & Outdoor"},
     {"name": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones" ,"price": 99.99, "catergory:": "Electronics"}
 ]
-""" def carts():
-    while True:
-        for index, item in enumerate(amazon):
+def carts():
+    for index, item in enumerate(amazon):
             print(index, ":", item["name"])
-        
+    while True:
         cart=int(input("What Will You Order Today? If Done, Write 10:"))
         
         if cart == 0:
@@ -51,7 +50,7 @@ amazon = [
             else :
                     print("Canceled order")
         
-carts() """
+carts()
 
 
 
@@ -62,7 +61,7 @@ carts() """
 
 
 #First part finished (Unoptimized)
-for index, item in enumerate(amazon):
+""" for index, item in enumerate(amazon):
     print(index, ":", item["name"], item["price"])
 purchase=int(input("What Will you Order today? Pick the number:"))
 for index, item in enumerate(amazon):
@@ -105,5 +104,5 @@ elif purchase == 5:
     else :
         print("Canceled order")
 elif purchase <= 6:
-    print("Try again")
+    print("Try again") """
 
