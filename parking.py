@@ -25,19 +25,22 @@ def lang(x,y):
 
 lang(3,"Lorsque j'avais six ans j'ai vu, une fois, une magnifique image, dans un livre")
  """
-
+        
 def magnus(x):
     Carlsen=0
     Count=0
-    for letter in x:
-        if letter == "HO":
-                Count += 1
-        elif letter == "NI":
-                Count += 1
-        if Count == 2:
-                 Carlsen += 1
-                 print(f"{Carlsen}")
-                 Count = 0
-        
-magnus("HHHHOOOONNNNIIII")
+    
+    for char in x:
+        if Count == 0 and char.upper() == 'H':
+            Count = 1
+        elif Count == 1 and char.upper() == 'O':
+            Count = 2
+        elif Count == 2 and char.upper() == 'N':
+            Count = 3        
+        elif Count == 3 and char.upper() == 'I':
+            Carlsen += 1
+            Count = 0 
+
+            print(Carlsen)       
+magnus("PROHODNIHODNIK")
 
