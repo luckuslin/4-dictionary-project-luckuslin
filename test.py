@@ -7,46 +7,51 @@ amazon = [
     {"name": "TERRO Ant Killer Bait Stations T300B","price": 11.97,"catergory": "Garden & Outdoor"},
     {"name": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones" ,"price": 99.99, "catergory:": "Electronics"}
 ]
-def carts():
+""" def carts():
     while True:
         for index, item in enumerate(amazon):
             print(index, ":", item["name"])
-        cart=int(input("What Will you add to cart?" 
-        "If done, write finished"))
-        if cart == "finished":
-            order=input("are you done? Y/N")
-        elif cart == 0:
-          samsung=input("Will you order the SAMSUNG 32-Inch Class Full HD F6000 Smart TV for 127.99? Y/N:")
-        if samsung == "Y":
-                print("Purchase Accepted!")
-        else :
-            print("Canceled order")
         
+        cart=int(input("What Will You Order Today? If Done, Write 10:"))
         
+        if cart == 0:
+            samsung=input("Will you order the SAMSUNG 32-Inch Class Full HD F6000 Smart TV for 127.99? Y/N:")
+            if samsung == "Y":
+                    print("Added To Cart!")
+            else :
+                    print("Canceled order")
+        elif cart == 1:
+            console=input("Will you order the Xbox Series X 1TB Gaming Console Console for 670? Y/N:")
+            if console == "Y":
+                print("Added To Cart!")
+            else :
+                print("Canceled order")
+        elif cart == 2:
+            table=input("Will you order Dining Table Set for 4 for 251.10? Y/N:")
+            if table == "Y":
+                print("Added To Cart!")
+            else :
+                print("Canceled order")
+        elif cart == 3:
+            Bounty=input("Will you order the Bounty Quick Size Paper Towels, White, 8 Family Rolls for 24.42? Y/N:")
+            if Bounty == "Y":
+                    print("Added To Cart!")
+            else :
+                    print("Canceled order")
+        elif cart == 4:
+            Ant_Bait=input("Will you order the TERRO Ant Killer Bait Stations T300B for 11.97? Y/N:")
+            if Ant_Bait == "Y":
+                    print("Added To Cart!")
+            else :
+                    print("Canceled order")
+        elif cart == 5:
+            Airpods=input("Will you order the Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones for 99.99? Y/N:")
+            if Airpods== "Y":
+                    print("Added To Cart!")
+            else :
+                    print("Canceled order")
         
-carts()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+carts() """
 
 
 
@@ -57,7 +62,7 @@ carts()
 
 
 #First part finished (Unoptimized)
-""" for index, item in enumerate(amazon):
+for index, item in enumerate(amazon):
     print(index, ":", item["name"], item["price"])
 purchase=int(input("What Will you Order today? Pick the number:"))
 for index, item in enumerate(amazon):
@@ -100,5 +105,5 @@ elif purchase == 5:
     else :
         print("Canceled order")
 elif purchase <= 6:
-    print("Try again") """
+    print("Try again")
 
