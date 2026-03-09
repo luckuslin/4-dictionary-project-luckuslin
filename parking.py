@@ -44,3 +44,6 @@ def magnus(x):
             print(Carlsen)       
 magnus("PROHODNIHODNIK")
 
+
+
+
